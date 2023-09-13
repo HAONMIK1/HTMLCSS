@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>예약문의</h1>
+	<form action="process.jsp">
+		<p>
+			<label>작성자</label>
+			<input name = "userName" type="text" value="홍길동">
+		</p>
+		
+		<p>
+			<label>비밀번호</label>
+			<input name = "userPw" type="password">
+		</p>
+		
+		<p>
+			<label>이메일</label>
+			<input name = "userEmail" type="email">
+		</p>
+		
+		<p>
+			<label>투숙인원</label>
+			<input name = "userNumber" type="number">
+		</p>
+		
+		<p>
+			<label>예약하실 객실을 선택하세요.</label>
+			<fieldset style="width:30%">
+				<legend>객실 선택</legend>
+			<input name = "userRoom" type="radio" value="single">single
+			<input name = "userRoom" type="radio" value="double">double
+			<input name = "userRoom" type="radio" value="twin">twin
+			</fieldset>
+		</p>
+		<p>
+			<label>예약자 성별을 선택하세요.</label>
+			<fieldset style="width:30%">
+				<legend>성별</legend>
+				<input name = "userGender" type="radio" value="남">남
+				<input name = "userGender" type="radio" value="여">여
+			</fieldset>
+		</p>
+		<p>
+			<label>Email</label>
+			<input name = "userEmail2" type="text">@
+			<select>
+				<option>###선택</option>
+				<option value="naver.com">naver.com</option>
+				<option value="daum.net">daum.net</option>
+				<option value="google.com">google.com</option>
+			</select>
+		</p>
+		
+		<p>
+			<label>좋아하는 색상 선택</label>
+			<input name = "userColor" type="color">
+		</p>
+		
+		<p>
+			<label>평점</label>
+			<input name = "userPoints" type="range" min="1" max="10" step="1" value="50">
+		</p>
+		
+			<p>
+			<label>옵션을 선택하세요.</label>
+			<fieldset style="width:30%">
+				<legend>옵션 선택</legend>
+				<input name = "userOption" type="checkbox" value="조식">조식
+				<input name = "userOption" type="checkbox" value="바베큐">바베큐
+				<input name = "userOption" type="checkbox" value="픽업서비스">픽업서비스
+			</fieldset>
+		</p>
+		
+		<p>
+			신원파악하기 위한 사진을 올려주세요.<br>
+			<input type="file" name="userFile">
+		</p>
+		<p>
+			<label>문의사항</label>
+			<textarea name="userMessage" rows="5"cols="40">문의사항을 입력해주세요.</textarea>
+		</p>
+		<p>
+			<input name="btn1" type="submit" value="전송">			
+			<input name="btn2" type="reset" value="취소">			
+			<input name="btn3" type="button" value="돌아가기">			
+		</p>
+		
+	</form>
+	
+</body>
+</html>
+<!--
+	 value 로 설정한 값은 기본값
+	 <fieldset> 테두리가 생김
+	 -->
+	
